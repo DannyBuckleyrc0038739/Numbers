@@ -19,7 +19,7 @@ namespace Numbers
             double d1 = 5e6;
             richTextBox1.AppendText(d1.ToString() + "\n");
             richTextBox1.AppendText(d1.ToString("N") + "\n");
-            richTextBox1.AppendText(d1.ToString("N3")+"\n");
+            richTextBox1.AppendText(d1.ToString("N3") + "\n");
             richTextBox1.AppendText(d1.ToString("N0") + "\n");
             richTextBox1.AppendText(d1.ToString("0") + "\n");
             richTextBox1.AppendText(d1.ToString("0.0") + "\n");
@@ -36,8 +36,18 @@ namespace Numbers
             richTextBox1.AppendText(c.ToString("N0") + "\n");
             richTextBox1.AppendText(c.ToString("0.000000000000000E00") + "\n");
             richTextBox1.AppendText(c.ToString("0.000E00") + "\n");
-        }
 
+
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an integer");
+            }
+        }
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
 
