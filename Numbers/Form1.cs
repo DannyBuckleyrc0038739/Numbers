@@ -47,7 +47,19 @@ namespace Numbers
             {
                 MessageBox.Show(st + " is not an integer");
             }
-        }
+        
+
+            string s2 = "3.2";
+            try
+            {
+                int i2 = int.Parse(s2);
+            }
+            catch
+            {
+                MessageBox.Show(s2 + " is not an integer");
+                int i2 = 0;
+            }
+
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
         {
 
